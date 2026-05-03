@@ -284,8 +284,8 @@ nav ul li:hover {
 }
 .custom-select-trigger::after {
     content: "";
-    width: 12px;
-    height: 6px;
+    width: 16px;
+    height: 12px;
     background-image: url('./assets/images/select-down-arrow.svg');
     background-repeat: no-repeat;
     background-size: contain;
