@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bombay DC</title>
+    <link rel="stylesheet" href="fontFace.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="side-menu" class="side-menu">
+            <span class="close-side-menu" id="close-side-menu"></span>
+            <ul class="side-menu-links">
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">NRI AREA</a></li>
+                <li><a href="#">NEWS & THOUGHTS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <nav>
+            <a href="/" class="logo">
+                logo
+            </a>
+            <ul>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">NRI AREA</a></li>
+                <li><a href="#">NEWS & THOUGHTS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <button class="menu-btn" id="menu-btn">
+                <img src="/assets/images/menu-bar.svg" alt="Menu">
+            </button>
+        </nav>
+        <p class="tagline">Lorem ipsum dolor sit amet - consetetur sadipscing elitr</p>
+    </header>
+    <main>
+        <div class="map-wrapper-mobile mobile">
+            <img src="/assets/images/map.png" alt="Map">
+        </div>
+        <div class="form-container" id="form-popup">
+            <span class="close-form-popup" id="close-popup"></span>
+            <form action="" class="primary-form">
+                <div class="input-wrapper">
+                    <input type="text" id="name" name="name" placeholder="Name" class="name">
+                    <p class="field-error" id="name-error"></p>
+                </div>
+                <div class="input-wrapper">
+                    <input type="email" id="email" name="email" placeholder="Email Address" class="email">
+                    <p class="field-error" id="email-error"></p>
+                </div>
+                <div class="input-wrapper">
+                    <input type="number" id="mobile" name="mobile" placeholder="Mobile Number" class="mobile-input">
+                    <p class="field-error" id="mobile-error"></p>
+                </div>
+                <div class="input-wrapper">
+                    <select name="query-type" id="query-type" class="query-type">
+                        <option value="" disabled selected>Query Type</option>
+                        <option value="Projects">Projects</option>
+                        <option value="Media">Media</option>
+                        <option value="Careers">Careers</option>
+                    </select>
+                    <p class="field-error" id="query-type-error"></p>
+                </div>
+                <div id="projects-container" style="display: none;" class="input-wrapper">
+                    <select name="projects" id="projects" class="projects">
+                        <option value="" disabled selected>Select Project</option>
+                        <option value="Project 1">Project 1</option>
+                        <option value="Project 2">Project 2</option>
+                        <option value="Project 3">Project 3</option>
+                        <option value="Project 4">Project 4</option>
+                        <option value="Project 5">Project 5</option>
+                        <option value="Project 6">Project 6</option>
+                    </select>
+                    <p class="field-error" id="projects-error"></p>
+                </div>
+                <button type="submit" id="submit-btn"><p>Send</p></button>
+                <p id="form-error" class="form-global-msg"></p>
+            </form>
+        </div>
+        <div class="map-container">
+            <div class="map-wrapper-desktop desktop">
+                <img src="/assets/images/map.png" alt="Map">
+            </div>
+            <div class="map-container-content_wrapper">
+                <div class="map-container-content">
+                    <div class="map-container-details">
+                        <p class="map-container-title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+                        <p class="map-container-contact">+91 000 0000 000 | test1@gmail.com | test2@gmail.com</p>
+                    </div>
+                    <button class="contact-us-btn">Send us an Enquiry</button>
+                </div>
+                <div class="map-contact sales">
+                    <p class="map-contact-title">Sales Enquiry</p>
+                    <div class="contact-details">
+                        <div class="phone">
+                            <p class="phone-title">Phone</p>
+                            <p class="phone-no">+91 000 0000 000</p>
+                        </div>
+                        <div class="mail">
+                            <p class="mail-title">Email</p>
+                            <p class="mail-address">test1@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-contact redevlopement">
+                    <p class="map-contact-title">Redevelopment Center</p>
+                    <div class="contact-details">
+                        <div class="phone">
+                            <p class="phone-title">Phone</p>
+                            <p class="phone-no">+91 000 0000 000</p>
+                        </div>
+                        <div class="mail">
+                            <p class="mail-title">Email</p>
+                            <p class="mail-address">test2@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+            <a href="/" class="footer-logo">
+                logo
+            </a>
+            <ul class="footer-links">
+                <ul class="footer-links-right">
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">NRI Area</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">News & Thoughts</a></li>
+                </ul>
+                <ul class="footer-links-left">
+                    <li><a href="#">Employee Corner</a></li>
+                    <li><a href="#">CSR</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                </ul>
+            </ul>
+            <form action="" class="footer-form">
+                <label for="email">Get the latest news</label>
+                <input type="email" id="email" name="email" placeholder="Enter email">
+                <button type="submit"><p>Subscribe</p></button>
+            </form>
+            <div class="scroll-to-top">
+                <img src="/assets/images/scroll-to-top.svg" alt="Scroll Up">
+                <p>To the top</p>
+            </div>
+            <div class="footer-end-wrapper">
+                <p class="iso-certified">An ISO 9001:2008 Certified Company</p>
+                <p class="copyright">© Copyrights 2019</p>
+                <ul class="social-links">
+                    <li><a href="#" class="social-icon fb" aria-label="facebook"></a></li>
+                    <li><a href="#" class="social-icon insta" aria-label="instagram"></a></li>
+                    <li><a href="#" class="social-icon linkedin" aria-label="linked-in"></a></li>
+                    <li><a href="#" class="social-icon twitter" aria-label="twitter"></a></li>
+                    <li><a href="#" class="social-icon youtube" aria-label="youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
