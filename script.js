@@ -6,9 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobilePopup();
 });
 
-/**
- * Handles header background change on scroll
- */
+
 function initHeaderScroll() {
     const header = document.querySelector('header');
     if (!header) return;
@@ -22,16 +20,13 @@ function initHeaderScroll() {
     });
 }
 
-/**
- * Transforms native selects into custom-styled dropdowns
- */
+
 function initCustomSelects() {
     const selects = document.querySelectorAll('.primary-form select');
     
     selects.forEach(select => {
         if (select.closest('.custom-select')) return;
 
-        // Create UI elements
         const wrapper = document.createElement('div');
         wrapper.className = `custom-select ${select.className}`;
         
@@ -41,11 +36,9 @@ function initCustomSelects() {
         const optionsContainer = document.createElement('div');
         optionsContainer.className = 'custom-options';
 
-        // Initial trigger state
         const selectedOption = select.options[select.selectedIndex] || select.options[0];
         trigger.innerHTML = `<span>${selectedOption.text}</span>`;
         
-        // Build custom options
         Array.from(select.options).forEach(option => {
             if (option.disabled) return;
             
@@ -60,11 +53,9 @@ function initCustomSelects() {
             optionDiv.addEventListener('click', (e) => {
                 e.stopPropagation();
                 
-                // Update native select
                 select.value = option.value;
                 select.dispatchEvent(new Event('change', { bubbles: true }));
                 
-                // Update UI state
                 trigger.querySelector('span').textContent = option.text;
                 optionsContainer.querySelectorAll('.check').forEach(img => img.style.display = 'none');
                 optionDiv.querySelector('.check').style.display = 'block';
@@ -75,7 +66,7 @@ function initCustomSelects() {
             optionsContainer.appendChild(optionDiv);
         });
 
-        // Event listeners for toggle
+
         trigger.addEventListener('click', (e) => {
             e.stopPropagation();
             document.querySelectorAll('.custom-select').forEach(el => {
@@ -84,7 +75,6 @@ function initCustomSelects() {
             wrapper.classList.toggle('open');
         });
 
-        // Assemble and insert
         select.style.display = 'none';
         select.parentNode.insertBefore(wrapper, select);
         wrapper.appendChild(trigger);
@@ -92,15 +82,12 @@ function initCustomSelects() {
         wrapper.appendChild(select);
     });
 
-    // Global click to close
     document.addEventListener('click', () => {
         document.querySelectorAll('.custom-select').forEach(el => el.classList.remove('open'));
     });
 }
 
-/**
- * Handles form validation and dynamic field visibility
- */
+
 function initFormValidation() {
     const form = document.querySelector('.primary-form');
     const queryTypeSelect = document.getElementById('query-type');
@@ -110,7 +97,6 @@ function initFormValidation() {
 
     if (!form) return;
 
-    // Handle dependent field visibility
     queryTypeSelect?.addEventListener('change', (e) => {
         const isProjects = e.target.value === 'Projects';
         projectsContainer.style.display = isProjects ? 'block' : 'none';
@@ -123,8 +109,7 @@ function initFormValidation() {
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-        
-        // Reset states
+
         globalError.style.display = 'none';
         document.querySelectorAll('.field-error').forEach(el => el.style.display = 'none');
         document.querySelectorAll('.input-error').forEach(el => el.classList.remove('input-error'));
@@ -139,9 +124,8 @@ function initFormValidation() {
 
         let hasError = false;
 
-        // Validation Rules
         if (data.name.value.trim().length < 2) {
-            showFieldError(data.name, "Name must be at least 2 letters long.");
+            showFieldError(data.name, "Name is required.");
             hasError = true;
         }
 
@@ -168,7 +152,6 @@ function initFormValidation() {
 
         if (hasError) return;
 
-        // Success State
         globalError.style.color = "green";
         globalError.textContent = "Form submitted successfully!";
         globalError.style.display = 'block';
@@ -214,9 +197,7 @@ function initFormValidation() {
     }
 }
 
-/**
- * Handles mobile side menu logic
- */
+
 function initMobileMenu() {
     const menuBtn = document.getElementById('menu-btn');
     const sideMenu = document.getElementById('side-menu');
@@ -227,15 +208,12 @@ function initMobileMenu() {
     menuBtn.addEventListener('click', () => sideMenu.classList.add('active'));
     closeBtn?.addEventListener('click', () => sideMenu.classList.remove('active'));
     
-    // Close on overlay click if implemented, or link click
     sideMenu.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => sideMenu.classList.remove('active'));
     });
 }
 
-/**
- * Handles mobile form popup logic
- */
+
 function initMobilePopup() {
     const trigger = document.querySelector('.contact-us-btn');
     const popup = document.getElementById('form-popup');
