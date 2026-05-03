@@ -1,78 +1,78 @@
 @font-face {
     font-family: 'Helvetica';
-    src: url("./assets/fonts/helvetica/Helvetica.ttf") format("truetype");
+    src: url("assets/fonts/helvetica/Helvetica.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Helvetica';
-    src: url("./assets/fonts/helvetica/helvetica-light-587ebe5a59211.ttf") format("truetype");
+    src: url("assets/fonts/helvetica/Helvetica.ttf") format("truetype");
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Helvetica';
-    src: url("./assets/fonts/helvetica/Helvetica-Bold.ttf") format("truetype");
+    src: url("assets/fonts/helvetica/Helvetica-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Helvetica';
-    src: url("./assets/fonts/helvetica/Helvetica-Oblique.ttf") format("truetype");
+    src: url("assets/fonts/helvetica/Helvetica-Oblique.ttf") format("truetype");
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Helvetica';
-    src: url("./assets/fonts/helvetica/Helvetica-BoldOblique.ttf") format("truetype");
+    src: url("assets/fonts/helvetica/Helvetica-BoldOblique.ttf") format("truetype");
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Helvetica Condensed';
-    src: url("./assets/fonts/helvetica/helvetica-compressed-5871d14b6903a.otf") format("opentype");
+    src: url("assets/fonts/helvetica/helvetica-compressed-5871d14b6903a.otf") format("opentype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Helvetica Rounded';
-    src: url("./assets/fonts/helvetica/helvetica-rounded-bold-5871d05ead8de.otf") format("opentype");
+    src: url("assets/fonts/helvetica/helvetica-rounded-bold-5871d05ead8de.otf") format("opentype");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Museo Slab';
-    src: url("./assets/fonts/museo-slab/Museo_Slab_100.otf") format("opentype");
+    src: url("assets/fonts/museo-slab/Museo_Slab_100.otf") format("opentype");
     font-weight: 100;
 }
 
 @font-face {
     font-family: 'Museo Slab';
-    src: url("./assets/fonts/museo-slab/Museo_Slab_300.otf") format("opentype");
+    src: url("assets/fonts/museo-slab/Museo_Slab_300.otf") format("opentype");
     font-weight: 300;
 }
 
 @font-face {
     font-family: 'Museo Slab';
-    src: url("./assets/fonts/museo-slab/Museo_Slab_500.otf") format("opentype");
+    src: url("assets/fonts/museo-slab/Museo_Slab_500.otf") format("opentype");
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'Museo Slab';
-    src: url("./assets/fonts/museo-slab/Museo_Slab_700.otf") format("opentype");
+    src: url("assets/fonts/museo-slab/Museo_Slab_700.otf") format("opentype");
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'Museo Slab';
-    src: url("./assets/fonts/museo-slab/Museo_Slab_900.otf") format("opentype");
+    src: url("assets/fonts/museo-slab/Museo_Slab_900.otf") format("opentype");
     font-weight: 900;
 }
