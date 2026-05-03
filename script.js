@@ -47,7 +47,7 @@ function initCustomSelects() {
             optionDiv.dataset.value = option.value;
             optionDiv.innerHTML = `
                 <span>${option.text}</span>
-                <img src="/assets/images/select-option-checkmark.svg" class="check" ${option.selected ? 'style="display:block;"' : 'style="display:none;"'}>
+                <img src="assets/images/select-option-checkmark.svg" class="check" ${option.selected ? 'style="display:block;"' : 'style="display:none;"'}>
             `;
             
             optionDiv.addEventListener('click', (e) => {

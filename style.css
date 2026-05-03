@@ -142,7 +142,7 @@ nav ul li {
     right: 20px;
     width: 24px;
     height: 24px;
-    background: url('/assets/images/close-form-popup.svg') no-repeat center;
+    background: url('assets/images/close-form-popup.svg') no-repeat center;
     background-size: contain;
     cursor: pointer;
 }
@@ -275,7 +275,7 @@ nav ul li:hover {
     content: "";
     width: 12px;
     height: 6px;
-    background-image: url('/assets/images/select-down-arrow.svg');
+    background-image: url('assets/images/select-down-arrow.svg');
     background-repeat: no-repeat;
     background-size: contain;
     transition: transform 0.3s ease;
@@ -633,13 +633,13 @@ footer {
 .social-icon {
     display: block;
     height: 18px;
-    background-image: url("/assets/images/social-sprite.svg");
+    background-image: url("assets/images/social-sprite.svg");
     background-repeat: no-repeat;
     transition: background-image 0.3s ease;
 }
 
 .social-icon:hover {
-    background-image: url("/assets/images/social-sprite-blue.svg");
+    background-image: url("assets/images/social-sprite-blue.svg");
 }
 
 .social-icon.fb { width: 15px; background-position: 0 0; }
@@ -765,7 +765,7 @@ footer {
         right: 14px;
         width: 24px;
         height: 24px;
-        background: url('/assets/images/close-form-popup.svg') no-repeat center;
+        background: url('assets/images/close-form-popup.svg') no-repeat center;
         background-size: cover;
         cursor: pointer;
         display: block;
