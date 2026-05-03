@@ -16,6 +16,10 @@ body {
     overflow-x: hidden;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 /* Remove number field spinner */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -164,6 +168,10 @@ nav ul li:hover {
 
 .mobile {
     display: none;
+}
+
+.desktop {
+    display: block;
 }
 
 .tagline {
@@ -691,6 +699,14 @@ footer {
 }
 
 @media (max-width: 767px) {
+    .desktop {
+        display: none !important;
+    }
+
+    .mobile {
+        display: block !important;
+    }
+
     main {
         padding: 0 20px 75px 20px;
     }
@@ -768,6 +784,11 @@ footer {
     #form-popup .custom-select {
         width: 100%;
         max-width: 100%;
+        text-align: left;
+    }
+
+    .field-error, .form-global-msg {
+        text-align: left;
     }
 
     .close-form-popup {
